@@ -9,17 +9,17 @@
   height: 100vh;
 }
 
-.masthead {
-  // Sass variables from `@diez/styles` provide a variety of directives. Here,
-  // we are using colors, URLs, and numbers.
-  background-image: $images-masthead-3x;
-  background-size: $images-masthead-size;
-  height: 194px;
-}
+// .masthead {
+//   // Sass variables from `@diez/styles` provide a variety of directives. Here,
+//   // we are using colors, URLs, and numbers.
+//   background-image: $images-masthead-3x;
+//   background-size: $images-masthead-size;
+//   height: 194px;
+// }
 
-.mastheadContainer {
-  background-image: $palette-header-background;
-}
+// .mastheadContainer {
+//   background-image: $palette-header-background;
+// }
 
 .title {
   // Higher-order design tokens like `Typograph` provide reusable mixins.

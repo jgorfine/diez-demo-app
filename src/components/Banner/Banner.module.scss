@@ -1,0 +1,16 @@
+// The Diez web compiler creates shared styles for Sass and CSS. The styles
+// imported here can be found at `build/diez-jlg-demo-web/static/styles.scss`,
+// relative to the project root.
+@import '@diez/styles.scss';
+
+.masthead {
+    // Sass variables from `@diez/styles` provide a variety of directives. Here,
+    // we are using colors, URLs, and numbers.
+    background-image: $images-masthead-3x;
+    background-size: $images-masthead-size;
+    height: 194px;
+}
+
+.mastheadContainer {
+    background-image: $palette-header-background;
+}

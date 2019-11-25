@@ -2,6 +2,8 @@ import React, { useCallback, useState, useEffect } from 'react';
 import { Diez, DesignLanguage } from 'diez-jlg-demo';
 import styles from './App.module.scss';
 
+import { Banner } from './components/Banner/Banner.jsx'
+
 const Animation = (props) => {
   const animation = useCallback((node) => {
     if (node !== null) {
@@ -36,9 +38,7 @@ const App = () => {
 
   return (
     <div className={styles.wrapper}>
-      <div className={styles.mastheadContainer}>
-        <div className={styles.masthead} />
-      </div>
+      <Banner />
       <div className={styles.contentContainer}>
         <div className={styles.content}>
           <div className={styles.icon}></div>
