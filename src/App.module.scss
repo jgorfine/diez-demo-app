@@ -3,37 +3,19 @@
 // relative to the project root.
 @import '@diez/styles.scss';
 
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-}
-
-// .masthead {
-//   // Sass variables from `@diez/styles` provide a variety of directives. Here,
-//   // we are using colors, URLs, and numbers.
-//   background-image: $images-masthead-3x;
-//   background-size: $images-masthead-size;
-//   height: 194px;
-// }
-
-// .mastheadContainer {
-//   background-image: $palette-header-background;
-// }
-
 .title {
   // Higher-order design tokens like `Typograph` provide reusable mixins.
-  @include typography-heading1();
+  @include token-typography-heading1();
 }
 
 .caption {
-  @include typography-caption();
-  margin-top: $layout-values-spacing-small-px;
+  @include token-typography-caption();
+  margin-top: $token-layout-values-spacing-small-px;
 }
 
 .body {
-  @include typography-body();
-  margin-top: $layout-values-spacing-medium-px;
+  @include token-typography-body();
+  margin-top: $token-layout-values-spacing-medium-px;
 }
 
 .contentContainer {
@@ -41,7 +23,6 @@
   flex-direction: column;
   display: flex;
   align-items: center;
-  background-color: $palette-content-background;
 }
 
 .content {
@@ -56,18 +37,18 @@
   flex-direction: column;
   display: flex;
   flex-grow: 1;
-  padding-top: $layout-values-spacing-large-px;
-  padding-right: $layout-values-spacing-medium-px;
-  padding-bottom: $layout-values-spacing-medium-px;
-  padding-left: $layout-values-spacing-medium-px;
+  padding-top: $token-layout-values-spacing-large-px;
+  padding-right: $token-layout-values-spacing-medium-px;
+  padding-bottom: $token-layout-values-spacing-medium-px;
+  padding-left: $token-layout-values-spacing-medium-px;
 }
 
 .icon {
-  @include images-logo-background-image();
-  @include shadows-logo-filter();
+  @include token-images-logo-background-image();
+  @include token-shadows-logo-filter();
   transform: translate(0, -50%);
   position: absolute;
-  margin-left: $layout-values-spacing-medium-px;
+  margin-left: $token-layout-values-spacing-medium-px;
 }
 
 .animationContainer {
@@ -86,6 +67,6 @@
 }
 
 .footer {
-  @include typography-body();
-  margin-top: $layout-values-spacing-medium-px;
+  @include token-typography-body();
+  margin-top: $token-layout-values-spacing-medium-px;
 }

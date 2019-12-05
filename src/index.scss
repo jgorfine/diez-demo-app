@@ -1,19 +1,23 @@
+// The Diez web compiler creates shared styles for Sass and CSS. The styles
+// imported here can be found at `build/diez-jlg-demo-web/static/styles.scss`,
+// relative to the project root.
+@import '@diez/styles.scss';
+
 body {
-  margin: 0;
-  padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  @include token-typography-body();
+
+  background-color: $token-palette-content-background;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
-p, h1, h2, h3, h4, h5 {
+p, h1, h2, h3, h4, h5, h6 {
   margin: 0;
-  font-weight: normal;
+  font-weight: 400;
 }

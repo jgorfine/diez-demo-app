@@ -37,25 +37,11 @@ const App = () => {
   }
 
   return (
-    <div className={styles.wrapper}>
+    <>
       <Banner />
-      <div className={styles.contentContainer}>
-        <div className={styles.content}>
-          <div className={styles.icon}></div>
-          <div className={styles.innerContent}>
-            <h2 className={styles.title}>{ds.strings.title}</h2>
-            <h3 className={styles.caption}>{ds.strings.caption}</h3>
-            <div className={styles.animationContainer}>
-              <Animation lottie={ds.loadingAnimation} />
-              <p className={styles.body}>{ds.strings.helper}</p>
-              <div className={styles.footer}>
-                  Refer to <a href="https://diez.org/getting-started/" target="_blank">The Guides</a> for more information.
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+      <main className={styles.contentContainer}>
+      </main>
+    </>
   );
 }
 
